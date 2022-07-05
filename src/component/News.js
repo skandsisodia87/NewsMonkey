@@ -43,7 +43,7 @@ const News = (props)=>  {
     document.title = `${capitalizeFirstLetter(props.category)}- NewsMonkey`;
     updateNews();
     // aslint-disable-next-line
-  }, []);
+  });
 
     return (
       <>
