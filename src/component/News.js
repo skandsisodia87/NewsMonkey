@@ -38,8 +38,7 @@ const News = (props)=>  {
   useEffect(() => {
     document.title = `${capitalizeFirstLetter(props.category)}- NewsMonkey`;
     updateNews();
-    // aslint-disable-next-line
-  });
+  },[]); // eslint-disable-line react-hooks/exhaustive-deps
 
     return (
       <>
